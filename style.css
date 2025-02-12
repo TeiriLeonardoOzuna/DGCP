@@ -1,0 +1,41 @@
+.bodyy{
+    background-color: rgba(252, 218, 255, 0.951);
+}
+.logo{
+ display: block;
+ margin: auto;
+ margin-bottom: 20px;
+ width: 500px;
+ height: 300px;
+}
+.contenedor{
+    text-align: center;
+    margin: 0 auto;
+    height: 300px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.contenedor input{
+    text-align: center;
+}
+.contenedor button{
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+.pokemon{
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    display: inline-block;
+    /* background-image: "https://cdn.pixabay.com/photo/2016/08/15/00/50/pokeball-1594373_640.png"; */
+}
+
+.text{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+
+}
