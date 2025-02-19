@@ -19,9 +19,9 @@ console.log("suma="+ suma +" resta="+ resta +" multi="+ multiplicar +" divi="+ d
 
 //operadores realcionale/Comparacion
 
-console.log(5<2);
-console.log(5>2);
-console.log(4==4);
+// console.log(5<2);
+// console.log(5>2);
+// console.log(4==4);
 
 //esto fue una prueba mia en el nivel 5 del curso 😍🤍
 //  if (5>2==true) {
@@ -32,39 +32,290 @@ console.log(4==4);
 // }
 
 //operadores logicos
-var edad1= 18 ;
-var dni =! false
-console.log("----------");
-console.log(dni);
-//ejemplo AND
+// var edad1= 18 ;
+// var dni =! false
+// console.log("----------");
+// console.log(dni);
+// //ejemplo AND
 
-console.log(edad1>=18 && dni==true);
+// console.log(edad1>=18 && dni==true);
 
-//ejemplo OR
+// //ejemplo OR
 
- console.log(edad1 >=18 || dni ==true);
+//  console.log(edad1 >=18 || dni ==true);
 
 </script>
 
     <script>
 
-    var nombre="teiriozuna";
-    let edad= 17;
-    var presenteOno= true;
-    var estatura= 5.6;
+    // var nombre="teiriozuna";
+    // let edad= 17;
+    // var presenteOno= true;
+    // var estatura= 5.6;
   
 
 
   //p2--------//aqui solo aprece en la consola, recordando que console.log es solo visibles para programadores via consola y js 
  //typeof=tipode, es utilizado para saber de que tipo es......
-  console.log("Nombre_Completo: " + nombre + "(" + typeof nombre + ")");
-  console.log("edad: " + edad +"(" + typeof edad + ")");
-  console.log("estatura: " + estatura + "(" + typeof estatura + ")");
+  // console.log("Nombre_Completo: " + nombre + "(" + typeof nombre + ")");
+  // console.log("edad: " + edad +"(" + typeof edad + ")");
+  // console.log("estatura: " + estatura + "(" + typeof estatura + ")");
 
     //alert("hola " + nombre + ", uuuh ya tienes " + edad + " años de edad💋");
     // alert("hola " + nombre +      "uuuh ya tienes " + edad + "años de edad💋")
-    </script>
 
+
+    //if/else/ifelse
+
+    // var aprobe=false;
+
+    // if (aprobe==true) {
+    //    console.log("bien echo aprobaste felicidades!!!!!")
+      
+    // }else{
+    //   console.log("no aprobaste lo lamento, pero tu puedes vamos!!!!")
+    // }
+
+    //(PROMPT)SWITCH/case
+
+    // var adivinanzas = prompt("que color se forma juntando negro y blanco??🤓");
+
+    // switch (adivinanzas) {
+
+    //   case "gris":
+    //     alert("muy bien que inteligencia!!!");
+    //     break;
+
+    //     case "plateado":
+    //     alert("eso!!! felicidades");
+    //     break;
     
+    //   default:
+    //     alert("noooo!!! vamos tu puedes");
+    //     break;
+    // }
+
+    //WHILE/FOR/DO WHILE
+// var sumadeuno= 0;
+// var numeroamulti= prompt("ingrese un numero a multiplicar:");
+// var result;
+// while (sumadeuno <=10) {
+
+//   console.log(sumadeuno+"x"+numeroamulti+"="+result);
+//   sumadeuno=sumadeuno+1;//sumadeuno++
+//   result=sumadeuno*numeroamulti;
+  
+// }
+
+// for (let sumadeuno = 0,numeroamulti= prompt("ingrese un numero amultiplicar"); sumadeuno <= 10;sumadeuno++) {
+
+//   let result=sumadeuno*numeroamulti;
+//   console.log("❤️"+sumadeuno+"x"+numeroamulti+"="+result);
+  
+// }
+
+// var contador=0;
+
+// do {
+//   console.log("vuelta numero "+contador);
+//   contador++
+// } while (contador <=10);
+
+///PROMPT/CONFIRM/
+// var te=prompt("holisss","hiii");
+//  var respuesta=window.prompt("hiiiii");
+
+// alert("su respuesta fue "+te);
+// alert("su respuesta fue "+respuesta);
+
+// var confirmacion=window.confirm("quieres se mi amiga?");
+
+// if(confirmacion==true){
+// alert("biennnn");
+
+// }else{
+//   alert("que malll");
+// }
+
+//////Fecha(new date)
+
+//  var fecha = new Date(2007,8,4,12);
+
+//  var año = fecha.getFullYear();
+//  var mes = fecha.getMonth();
+//  var dia = fecha.getDate();
+//  var hora = fecha.getHours();
+
+// alert("Mi año de nacimineto fue en: "+ año +" Mi mes de nacimineto fue en: "+ (mes+1) +" El dia de mi naciento fue el: "+ dia +" La hora en que naci fue a las: "+ hora);
+
+////Arrays
+
+//vectores(unidimensiuonales)
+//Matrices (Bi o Multidimensionales)
+//a igual que otras se cuenta desde cero(0)
+
+// let vector=[1,2,3,4,5,6];
+// console.log(vector[2]);
+
+// let Matris=[[1,2,3],[4,5,6]];
+// console.log(Matris[1][2]);
+
+let vector= new Array(3);
+vector[0]="teiri";
+vector[1]="luz";
+vactor[2]="maslin";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//EJERCICIOS JS
+
+// var bebida= 900+650;
+//   var comida= 2800+1300;
+//   var total= bebida+comida;
+//     alert("el costo de tus bebidas es de: "+"("+bebida+")------"+"el costo de tus comidas es de: "+"("+comida+")--------en total seria:"+total);
+
+////////////////////////////////////////////
+
+// var num1 =prompt("ingresa el primer numero");  
+// var num2 =prompt("ingresa el segundo numero");
+// resultadoresta =num1-num2; 
+
+// if (resultadoresta>0) {
+//   alert("es mayor a 0");
+
+// if (resultadoresta % 2 === 0) {
+//   alert("este número es par");
+
+// }else{
+//   alert("este número es impar");
+// }
+
+// }else{
+//   alert("es igual a 0");
+// }
+
+//////////////////////////////////
+
+// var total=prompt("total");
+// var resivido=prompt("resivido");
+// var devuelta=total-resivido;
+
+// alert("tienes que devolverle: "+devuelta);
+
+////////////////////////////////////
+
+// for (let suma = 1; suma <= 35; suma++) {
+//   console.log(suma);
+  
+// }
+
+/////////////////////////
+
+// alert("10");
+// alert("9");
+// alert("8");
+// alert("7");
+// alert("6");
+// alert("5");
+// alert("4");
+// alert("3");
+// alert("2");
+// alert("1");
+// alert("0");
+// alert("Feliz año nuevo!!!");
+
+
+////////////////////////////////////////////
+
+// minutos=10
+
+// while (minutos >=0) {
+//    alert(minutos);
+//    minutos--;
+
+//    if (minutos==0) {
+//     alert("feliz año nuevo!!!")
+//    }
+// }
+
+//////////////////////////////
+
+// var valor1= window.prompt("ingrese un valor");
+// var valor2= window.prompt("ingrese otro valor");
+
+// if (valor1 > valor2) {
+  
+//   alert(valor1+" es mayor a "+valor2);
+// } else {
+//   alert(valor1+" es menor a "+valor2);
+// }
+
+//////////////////////////
+
+// var dia= prompt("ingrese un dia");
+// var mes= prompt("ingrese un mes");
+// var año= prompt("ingrese un año");
+
+// var fechas= new Date(dia,mes,año);
+
+//  var dia= fechas.getDay();
+
+// var diadesemana;
+
+// switch (dia) {
+//   case 0:
+//     diadesemana="Domingo";
+//     break;
+
+//     case 1:
+//      diadesemana="Lunes";
+//     break;
+
+//     case 2:
+//     diadesemana="Martes";
+//     break;
+
+//     case 3:
+//     diadesemana="Miercoles";
+//     break;
+
+//     case 4:
+//     diadesemana="jueves";
+//     break;
+
+//     case 5:
+//     diadesemana="Viernes";
+//     break;
+
+//     case 6:
+//     diadesemana="sábado";
+//     break;
+
+//   default:
+//     alert("ha ocurrido un error, vuelva a intentarlo");
+//     break;
+// }
+
+// alert("El dia de la semana es "+diadesemana);
+
+/////////////////////////////
+
+
+    </script>
 </body>
 </html>
