@@ -150,9 +150,9 @@ console.log("suma="+ suma +" resta="+ resta +" multi="+ multiplicar +" divi="+ d
 
 ////Arrays
 
-//vectores(unidimensiuonales)
-//Matrices (Bi o Multidimensionales)
-//a igual que otras se cuenta desde cero(0)
+// vectores(unidimensiuonales)
+// Matrices (Bi o Multidimensionales)
+// a igual que otras se cuenta desde cero(0)
 
 // let vector=[1,2,3,4,5,6];
 // console.log(vector[2]);
@@ -160,25 +160,105 @@ console.log("suma="+ suma +" resta="+ resta +" multi="+ multiplicar +" divi="+ d
 // let Matris=[[1,2,3],[4,5,6]];
 // console.log(Matris[1][2]);
 
-let vector= new Array(3);
-vector[0]="teiri";
-vector[1]="luz";
-vactor[2]="maslin";
+// let vector= new Array(3);
+// vector[0]="teiri";
+// vector[1]="luz";
+// vactor[2]="maslin";
+//////codogos de vectore laptop(local)
+
+////////////////////////////////////////////////////////////
+
+// let frutas = ["naranja", "manzana","banana","kiwi"];
+// frutas.push("mandarina")//añade en la ultima posición
+// frutas.unshift("sandia")//añade en la primera posición
+// frutas.pop();//elimina el ultimo vector 
+// frutas.shift();//elimina el primer vector/elemento
+
+// let frutasconi = frutas.filter(frutas =>frutas.includes("i"));//filtra la informacion y luego la incluye especificando
+// console.log(frutasconi);
+/////////////////////////////////////////////////////
 
 
+// let frutas = ["naranja", "manzana","banana","kiwi"];
+// let frutas2 = ["sandia", "uvas","pera","melon"];
+// let frutasjuntas = frutas.concat(frutas2);//concatenas o sea juntan 
+
+// frutasjuntas.reverse();//en reversa/atras para adelante
+// frutasjuntas.sort();//ordenado alfabeticamente
+// console.log(frutasjuntas);
+///////////////////////////////////////////
+
+// function saludo() {
+
+//   console.log("Holiss mi nombre es Teiri!!");
+// }
+
+// saludo();//debe de estas fuera del fuction=funcion
 
 
+// function suma(num1,num2) {
 
+//   let resultadosuma =num1+num2;
+//   return resultadosuma;
+// }
 
+// let sumar = suma(10,5);
+// console.log("la suma es de:"+sumar);
 
+///////string///
 
+// let palabra = "hola"
+// // let cantidad = palabra.length;//length cuenta la cantidad de caracteres hay en una frase
+// let cantidad = palabra.slice(0,2);//solo selecciona una palabra  en especifico
+// console.log(cantidad);
 
+let palabra = "mango,arroz,lechuga,pechuca,kiwi,zapato";
+console.log(palabra);
 
+let lista = palabra.split(",");//organizado como un vector,tambien utilizadp en arrays
+console.log(lista);
 
+let frase ="Hola mi nombre es Teiri";
+let subcadena =frase.substr(0,4);//solo selecionar uan frase o palabra en especifico
+console.log(subcadena);
 
+let frase2="hola Nombreee";
+let mayu =frase2.toLocaleUpperCase();//en mayuscula
+let minu =frase2.toLocaleLowerCase();//en minuscula
+console.log(mayu);
+console.log(minu);
 
+let frase3="hola";
+let frase4="Teiri";
+let concatenado= frase3.concat(frase4);//concatenar/unir
+console.log(concatenado);
 
+let posicion=  frase.indexOf("Teiri");  //busca palabra en especifico
+if (posicion >= 0) {
+  console.log("bien aqui esta: "+posicion);
+} else {
+  console.log("error ese elemento no existe");
+}
 
+let frase7  ="holis amigossssss";
+let encuentra =frase7.includes("holis");//booleano pero casi igual que indexOf
+
+if (encuentra == true) {
+  console.log("muy bien!!, la palabra fue encontrada");
+} else {
+  console.log("error ese elemento o palabra no existe");
+}
+
+let elige= prompt("ingresa tu nombre");
+let nombres="teiri,maria,estel,luz,maslin,yessi";
+let aqui= nombres.indexOf(elige);
+let minus=elige.toLocaleLowerCase();
+if (aqui >=0) {
+  console.log("holaaaa bienvenida "+elige);
+  
+} else {
+  console.log(elige+" lo lamento no te encontre");
+}
 
 
 
@@ -315,6 +395,13 @@ vactor[2]="maslin";
 
 /////////////////////////////
 
+// var pokemon = Array["bulbasaur","pokemon"];
+// var habilidades = [[70,60], [50,80]];
+// for (let pokemons = 0; pokemons<= "bulbasaur"; pokemons++) {
+// console.log(pokemons);
+  
+// }//s4entencia repetitiva y ya declara de por ella misma dentro del mismo(for).
+ 
 
     </script>
 </body>
