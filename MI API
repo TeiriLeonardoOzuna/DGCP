@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Usuario</title>
+</head>
+<body>
+    <h2>Buscar Información del Usuario</h2>
+    
+    <label for="user_id">Introduce el ID del usuario:</label>
+    <input type="text" id="user_id" placeholder="ID del usuario">
+    <button onclick="buscarUsuario()">Buscar</button>
+
+    <div id="resultados">
+        <!-- Los resultados aparecerán aquí -->
+    </div>
+
+    <script>
+        // Función para buscar la información del usuario por su ID
+        function buscarUsuario() {
+            const userId = document.getElementById("user_id").value; // Obtenemos el ID del usuario desde el input
+            const url = `https://api.ejemplo.com/usuarios/${userId}`; // URL de la API (cambiar según tu API real)
+
+            // Realizamos la solicitud usando fetch
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) { // Verificamos si la respuesta fue exitosa
+                        throw new Error('Error en la solicitud');
+                    }
+                    return response.json(); // Convertimos la respuesta en JSON
+                })
+                .then(data => {
+                    // Mostramos la información en la página
+                    const nombre = data.nombre || "No disponible";
+                    const apellido = data.apellido || "No disponible";
+                    const trabajo = data.trabajo || "No disponible";
+                    const area = data.area || "No disponible";
+
+                    // Mostramos los datos en el div con el id "resultados"
+                    document.getElementById("resultados").innerHTML = `
+                        <h3>Información del Usuario:</h3>
+                        <p><strong>Nombre:</strong> ${nombre}</p>
+                        <p><strong>Apellido:</strong> ${apellido}</p>
+                        <p><strong>Trabajo:</strong> ${trabajo}</p>
+                        <p><strong>Área:</strong> ${area}</p>
+                    `;
+                })
+                .catch(error => {
+                    // En caso de error, mostramos un mensaje
+                    document.getElementById("resultados").innerHTML = `
+                        <p style="color: red;">Error al obtener la información. Intenta nuevamente.</p>
+                    `;
+                });
+        }
+    </script>
+</body>
+</html>
 
