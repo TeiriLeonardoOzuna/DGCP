@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mi API.css">
     <title>Buscar Usuario</title>
 </head>
 <body>
-    <h2>Buscar Información del Usuario</h2>
+     <h2 class="titulo">Introduce el ID del Empleado</h2>
     
-    <label for="user_id">Introduce el ID del usuario:</label>
+    <label class="tx" for="user_id">Introduce el ID:</label>
     <input type="text" id="user_id" placeholder="ID del usuario">
     <button onclick="buscarUsuario()">Buscar</button>
 
@@ -57,3 +58,24 @@
 </body>
 </html>
 
+
+body{background-color: rgb(232, 220, 204);}
+
+
+.titulo{
+    color: blue;
+    margin-top: 90px;
+    margin-left: 600px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tx{
+    margin-left: 700px;
+
+   
+}
+
+#resultados{
+    margin-left: 700px;
+}
